@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dajiro Studio - Agence de publicité à Creil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4e9b1e7e2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <span class="gradient-text">Dajiro Studio</span>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="section hero-section" data-animate>
+    <video class="hero-bg-video" autoplay loop muted playsinline>
+      <source src="video/0_Black_Fabric_3840x2160.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-subtitle">Avec DAJIRO STUDIO</div>
+      <h1 class="hero-title">SOYEZ<br>UNIQUE</h1>
+      <a href="#contact" class="btn hero-btn">Prendre contact</a>
+    </div>
+    
+    <div class="hero-banner">
+      <div class="banner-track">
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+        <span>MADE IN FRANCE</span>
+        <span class="circle-sep"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section" data-animate>
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="services-list">
+        <div class="service-card toggle-service">
+          <!-- Icône feuille SVG -->
+          <span class="service-svg">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 38C10 38 12 28 24 18C36 8 38 10 38 10C38 10 40 36 24 38C8 40 10 38 10 38Z" fill="#222"/>
+              <path d="M24 38C24 38 24 28 34 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <h3>Support Digital & Audio visuel</h3>
+          <div class="service-desc hidden">
+            <p>Création de contenus digitaux, vidéos, podcasts, motion design et accompagnement audiovisuel pour valoriser votre image sur tous les supports numériques.</p>
+          </div>
+        </div>
+        <div class="service-card toggle-service">
+          <!-- Icône mégaphone SVG -->
+          <span class="service-svg">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="18" width="24" height="12" rx="3" fill="#222"/>
+              <path d="M30 24L42 18V30L30 24Z" fill="#222"/>
+              <circle cx="10" cy="36" r="4" fill="#222"/>
+            </svg>
+          </span>
+          <h3>Publicité & Marketing</h3>
+          <div class="service-desc hidden">
+            <p>Stratégie publicitaire, campagnes marketing multicanal, branding, print, affichage, réseaux sociaux et gestion de l'image de marque.</p>
+          </div>
+        </div>
+        <div class="service-card toggle-service">
+          <!-- Icône graphique SEO SVG -->
+          <span class="service-svg">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="32" width="6" height="8" rx="2" fill="#222"/>
+              <rect x="20" y="24" width="6" height="16" rx="2" fill="#222"/>
+              <rect x="32" y="16" width="6" height="24" rx="2" fill="#222"/>
+              <path d="M8 32L24 16L38 24" stroke="#222" stroke-width="3" fill="none"/>
+            </svg>
+          </span>
+          <h3>Seo & Ads</h3>
+          <div class="service-desc hidden">
+            <p>Optimisation SEO, référencement naturel, campagnes Google Ads, analyse de trafic et amélioration de la visibilité sur le web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations" class="section" data-animate>
+    <div class="container">
+      <h2>Nos réalisations</h2>
+      <div class="gallery-filters">
+        <button class="gallery-filter active" data-filter="all">Tout</button>
+        <button class="gallery-filter" data-filter="identite">Identité</button>
+        <button class="gallery-filter" data-filter="print">Print</button>
+        <button class="gallery-filter" data-filter="digital">Digital</button>
+        <button class="gallery-filter" data-filter="video">Vidéo</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-cat="identite"><img src="img/JINEE3_Plan de travail 1-02.webp" alt="Identité 1"><span>Identité</span></div>
+        <div class="gallery-item" data-cat="print"><img src="img/JINEE-07.webp" alt="Print 1"><span>Print</span></div>
+        <div class="gallery-item" data-cat="print"><img src="img/297x210 RVv2-01.jpg" alt="Print 2"><span>Print</span></div>
+        <div class="gallery-item" data-cat="digital"><img src="img/1735822148473.jpg" alt="Digital 1"><span>Digital</span></div>
+        <div class="gallery-item" data-cat="identite"><img src="img/AjaformationLogo.png" alt="Identité 2"><span>Identité</span></div>
+      </div>
+      <!-- Carrousel existant conservé en dessous -->
+      
+    </div>
+  </section>
+
+  <section id="about" class="section" data-animate>
+    <div class="container">
+      <h2>À propos de Dajiro Studio</h2>
+      <button id="toggle-about" class="btn">Afficher/Masquer</button>
+      <div id="about-content" class="about-content hidden">
+        <p>Dajiro Studio, basé à Creil, accompagne les entreprises dans leur communication depuis 2015. Notre équipe créative imagine des solutions sur-mesure pour chaque client.</p>
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Équipe Dajiro Studio" class="about-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-animate>
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <div class="contact-flex">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="error-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error-message" id="error-message"></span>
+          </div>
+          <button type="submit" class="btn gradient-btn">Envoyer</button>
+          <div id="form-loader" class="form-loader hidden">
+            <div class="loader-circle"></div>
+            <div class="loader-message">Envoi du message...</div>
+          </div>
+          <div id="form-success" class="form-success hidden">Merci pour votre message !<br>Nous revenons vers vous au plus vite.</div>
+        </form>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps?q=8+allée+de+la+roselière,+ostwald&output=embed" width="100%" height="320" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="scroll-top" class="scroll-top" title="Remonter">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dajiro Studio - Agence de publicité à Creil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
